@@ -1,0 +1,10 @@
+.selectRegion {
+  padding: .5rem 1rem;
+  margin: 2rem 1rem;
+  box-shadow: 0 0 7px 2px rgba(0, 0, 0, .1);
+  border: none;
+}
+
+.option {
+  padding: .3rem 1rem;
+}
