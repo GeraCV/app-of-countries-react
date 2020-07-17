@@ -1,16 +1,23 @@
 import React from 'react'
 import Country from './country'
 import '../styles/countryList.css'
-import { connect } from 'react-redux'
+import { useSelector } from 'react-redux'
 
 
-const CountryList = ({ countries }) => {
+const CountryList = () => {
 
+  const countryList = useSelector(state => {
+    if ('' !== state.nameRegionFiltered) {
+      return state.filteringRegionCountries
+    }
+
+    return state.countries
+  })
 
   return (
     <div className="countryList">
       {
-        countries.map(({ name, flag, region, population, capital }) => {
+        countryList.map(({ name, flag, region, population, capital }) => {
           return (
             <Country
               key={name}
@@ -26,12 +33,5 @@ const CountryList = ({ countries }) => {
   )
 }
 
-const mapStateToProps = (state) => {
-  return {
-    countries: state.countries
-  }
-}
 
-const mapDispatchToProps = () => ({})
-
-export default connect(mapStateToProps, mapDispatchToProps)(CountryList)
+export default CountryList
