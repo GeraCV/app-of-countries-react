@@ -10,6 +10,9 @@ const CountryList = () => {
     if ('' !== state.nameRegionFiltered) {
       return state.filteringRegionCountries
     }
+    if (state.filteringNameCountry.length > 0) {
+      return state.filteringNameCountry
+    }
 
     return state.countries
   })
