@@ -1,6 +1,6 @@
 import React from 'react'
 import '../styles/barSearch.css'
-import { useSelector, useDispatch } from 'react-redux'
+import { useDispatch } from 'react-redux'
 import { GET_NAME_OF_COUNTRIES } from '../redux/actions'
 
 const getNameCounty = name => {
@@ -17,7 +17,7 @@ const BarSearch = () => {
 
   const writingCountry = e => {
     const name = e.target.value
-    console.log(name)
+    // console.log(name)
     dispatch(getNameCounty(name))
   }
 

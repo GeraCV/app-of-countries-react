@@ -13,7 +13,7 @@ const initialState = {
 }
 
 const rootReducer = (state = initialState, action) => {
-  // console.log(action.data)
+  console.log(action.data)
   switch (action.type) {
     case GET_COUNTRIES_ALL: {
       return {
@@ -33,7 +33,7 @@ const rootReducer = (state = initialState, action) => {
     }
 
     case GET_NAME_OF_COUNTRIES: {
-      console.log(action.data)
+      // console.log(action.data)
       const name = action.data
       if ('' === name) {
         return { ...state, filteringNameCountry: [] }
