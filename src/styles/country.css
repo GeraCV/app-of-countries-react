@@ -11,6 +11,7 @@
 
 .image {
   width: 100%;
+
 }
 
 .container-information {
@@ -25,4 +26,11 @@
 .data {
   font-size: .8em;
   margin-bottom: .3rem;
+}
+
+@media screen and (min-width: 480px) {
+  .image {
+  height: 12rem;
+  object-fit: cover;
+  }
 }

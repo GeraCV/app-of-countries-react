@@ -1,5 +1,5 @@
 import React from 'react'
-import './styles/principal.css'
+import './styles/root.css'
 import { BrowserRouter as Router, Route, Switch } from 'react-router-dom'
 import Header from './components/header'
 import Principal from './components/principal'

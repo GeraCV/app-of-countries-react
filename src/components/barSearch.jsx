@@ -23,11 +23,14 @@ const BarSearch = () => {
 
 
   return (
-    <input className="barsearch"
-      type="text"
-      placeholder="Search for a country..."
-      onChange={writingCountry}
-    />
+    <div className="container-bar-search">
+      <i className=" icon-search fas fa-search"></i>
+      <input className="inpt-search"
+        type="text"
+        placeholder="Search for a country..."
+        onChange={writingCountry}
+      />
+    </div>
   )
 }
 

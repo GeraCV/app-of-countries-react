@@ -1,3 +1,19 @@
 .countryList {
   margin: 2rem 3rem;
 }
+
+
+@media screen and (min-width: 750px) {
+  .countryList {
+    display: grid;
+    grid-gap: 2rem;
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+
+@media screen and (min-width: 1024px) {
+ .countryList {
+    grid-template-columns: repeat(4, 1fr);
+  }
+}

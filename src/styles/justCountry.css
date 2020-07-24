@@ -1,47 +1,63 @@
-.container-justcountry {
+.container-onlyCountry {
   margin: 1.5rem;
 }
 
 .container-btn {
   margin: 2rem 0 3rem 0;
+  padding: .5rem;
+  display: flex;
+  align-items: center;
+  box-shadow: 0 0 7px 2px rgba(0, 0, 0, .2);
+  border-radius: .2rem;
+  width: max-content;
+}
+
+.nav {
+  text-decoration: none;
+}
+
+.icon-flecha {
+  color: black;
+  text-decoration: none;
+  margin-right: .5rem;
+  
 }
 
 .btn-back {
-  box-shadow: 0 0 7px 2px rgba(0, 0, 0, .2);
   font-size: .9rem;
-  border-radius: .2rem;
-  padding: .5rem 2rem;
   border-style: none;
   background: white;
+ 
 }
 
-.container-j-country {
+.co-country {
   margin-bottom: 2.5rem;
 }
 
-.container-j-image {
+.co-image {
   width: 100%;
   margin-bottom: 2rem;
 }
 
-.image-j {
+.image-country {
   width: 100%;
+    display: block;
 }
 
-.container-information-j {
+.first-container-information {
   margin: 1rem 0 3rem 0;
 }
 
-.container-information-two-j {
+.second-container-information {
   margin-bottom: 2rem;
 }
 
-.name-j {
+.name-country {
   font-size: 1.2em;
   margin: .8em 0 1.5rem 0;
 }
 
-.data-j {
+.data-c {
   font-size: .8em;
   margin-bottom: .3rem;
 }
@@ -58,5 +74,91 @@
   border-radius: .2rem;
   padding: .2rem;
   margin-right: 1rem;
-
 }
+
+
+@media screen and (min-width: 750px) {
+
+ .co-country {
+   display: grid;
+   grid-template-columns: repeat(2, 1fr);
+   grid-gap: 2rem;
+ }
+
+ .co-image {
+   margin-bottom: 0;
+ }
+
+
+ .first-container-information {
+   margin: 0;
+ }
+ .second-container-information {
+   margin: 0;
+ }
+
+ .container-border-country{
+   grid-column: span 2;
+   margin: 2rem 0;
+    display: flex;
+   align-items: center;
+   justify-content: start;
+   
+ }
+
+ .text-b-country {
+   margin-bottom: 0;
+   margin-right: 1rem;
+ }
+
+ .name-country {
+   margin-top: 0;
+ }
+} 
+
+
+
+@media screen and (min-width: 980px) {
+
+ .co-country {
+   display: grid;
+   grid-template-columns: repeat(2, 1fr);
+   grid-gap: 2rem;
+ }
+
+ .co-image {
+   margin-bottom: 0;
+ }
+
+ .main-container-information {
+   display: grid;
+   grid-template-columns: repeat(2, 1fr);
+   grid-template-rows: repeat(2, max-content);
+   
+ }
+
+ .first-container-information {
+   margin: 0;
+ }
+ .second-container-information {
+   margin: 4.1rem 0;
+ }
+
+ .container-border-country{
+   grid-column: span 2;
+   display: flex;
+   align-items: center;
+   justify-content: center;
+   margin:2rem 0;
+   
+ }
+
+ .text-b-country {
+   margin-bottom: 0;
+   margin-right: 1rem;
+ }
+} 
+
+
+
+
