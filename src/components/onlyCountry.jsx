@@ -12,7 +12,7 @@ const OnlyCountry = ({ match }) => {
     <div className="container-onlyCountry">
       <NavLink to="/" className="nav">
         <div className="container-btn">
-          <i class="icon-flecha fas fa-hand-point-left"></i>
+          <i className="icon-flecha fas fa-hand-point-left"></i>
           <button className="btn-back" > Back </button>
         </div>
       </NavLink>

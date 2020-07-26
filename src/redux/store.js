@@ -13,7 +13,7 @@ const initialState = {
 }
 
 const rootReducer = (state = initialState, action) => {
-  console.log(action.data)
+  // console.log(action.data)
   switch (action.type) {
     case GET_COUNTRIES_ALL: {
       return {

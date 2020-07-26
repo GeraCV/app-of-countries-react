@@ -6,6 +6,29 @@
   padding: 0;
 }
 
+:root {
+  --white: white;
+  --black: rgb(32, 32, 32);
+  --background: #212E37;
+  --second-background:  #2B3743;
+}
+
+.l-m {
+  --white: white;
+  --black: rgb(32, 32, 32);
+  --background: white;
+  --second-background: white;
+}
+
+.d-m {
+  --black: white;
+  --white: rgb(32, 32, 32);
+  --background: #212E37;
+  --second-background:  #2B3743;
+}
+
+
 body {
   font-family: Nunito Sans, 'Open Sans';
+  background: var(--background);
 }

@@ -4,16 +4,17 @@
   margin: 2rem 1rem;
   box-shadow: 0 0 7px 2px rgba(0, 0, 0, .1);
   position: relative;
-  
 }
 
 .inpt-search {
   width: 100%;
   border: none;
   padding: 1rem 1rem 1rem 3rem;
+  border-radius: .5rem;
+  background: var(--second-background);
+  color: var(--black);
  
 }
-
 .icon-search {
   color: rgb(182, 181, 181);
   position: absolute;
